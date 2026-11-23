@@ -1,8 +1,0 @@
-[{
-      "relation": ["delegate_permission/common.handle_all_urls"],
-      "target": {
-        "namespace": "android_app",
-        "package_name": "io.github.zee_brade.twa",
-        "sha256_cert_fingerprints": ["0E:7F:D0:41:4F:F8:7B:02:D8:8F:56:D1:B9:CA:57:EE:01:A2:E6:FA:21:A3:03:59:E8:2F:6D:01:BD:02:88:0F"]
-      }
-    }]

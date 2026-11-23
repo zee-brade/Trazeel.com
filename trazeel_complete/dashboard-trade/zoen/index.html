@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0b0e14">
+<title>Zoén | Asisten Edukasi Finansial</title>
+<link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+<div class="app">
+  <header>
+    <div class="brand">
+      <div class="logo">Z</div>
+      <div>
+        <div class="brand-name">Zoén</div>
+        <div class="brand-sub">Asisten Edukasi Finansial</div>
+      </div>
+    </div>
+    <div class="header-actions">
+      <button class="btn-reset" id="resetBtn" type="button">Topik Utama</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro" id="intro">
+      <div class="eyebrow">Literasi &amp; Kerangka Berpikir</div>
+      <h1>Kelola keuangan &amp; pasar<br>dengan nalar yang terukur.</h1>
+      <p>Diskusikan cara pandang finansial, pengelolaan arus kas &amp; dana darurat, prinsip investasi berbagai kelas aset, hingga struktur pasar dan manajemen risiko.</p>
+    </section>
+
+    <section class="topics" id="topics">
+      <button class="topic" data-q="Bagaimana cara pandang dasar yang benar dalam dunia finansial?">
+        <div class="topic-info">
+          <strong>Cara Pandang &amp; Fondasi Finansial</strong>
+          <span>Probabilitas, uang dingin, aset vs liabilitas, &amp; inflasi</span>
+        </div>
+        <span class="topic-arrow">→</span>
+      </button>
+      <button class="topic" data-q="Bagaimana cara mengatur arus kas, budgeting, dan dana darurat?">
+        <div class="topic-info">
+          <strong>Arus Kas, Budgeting, &amp; Dana Darurat</strong>
+          <span>Cash flow, rasio sehat, utang, &amp; piramida keuangan</span>
+        </div>
+        <span class="topic-arrow">→</span>
+      </button>
+      <button class="topic" data-q="Apa saja prinsip dasar investasi dan pilihan kelas asetnya?">
+        <div class="topic-info">
+          <strong>Prinsip Investasi &amp; Kelas Aset</strong>
+          <span>Compound interest, profil risiko, SBN, Reksa Dana, &amp; Saham</span>
+        </div>
+        <span class="topic-arrow">→</span>
+      </button>
+      <button class="topic" data-q="Apa saja jenis pair dalam trading dan bagaimana membaca analisis fundamental?">
+        <div class="topic-info">
+          <strong>Instrumen Pasar &amp; Makroekonomi</strong>
+          <span>Major/Cross pair, Emas, Indeks AS, &amp; kalender ekonomi</span>
+        </div>
+        <span class="topic-arrow">→</span>
+      </button>
+      <button class="topic" data-q="Apa itu market structure? Jelaskan dari konsep dasar.">
+        <div class="topic-info">
+          <strong>Struktur Pasar, Teknikal, &amp; SMC/ICT</strong>
+          <span>Price action, Confluence, BOS/CHoCH, OTE, &amp; Liquidity</span>
+        </div>
+        <span class="topic-arrow">→</span>
+      </button>
+      <button class="topic" data-q="Apa itu risk management dan position sizing dalam trading?">
+        <div class="topic-info">
+          <strong>Manajemen Risiko &amp; Psikologi</strong>
+          <span>Hitung lot, Drawdown, Prop Firm, &amp; bias emosi</span>
+        </div>
+        <span class="topic-arrow">→</span>
+      </button>
+    </section>
+
+    <section class="chat" id="chat" aria-live="polite">
+      <div class="message bot">
+        <div class="avatar">Z</div>
+        <div class="msg-content">
+          <div class="bubble">
+            <p>Halo, selamat datang. Saya <strong>Zoén</strong>, teman diskusi Anda untuk memahami fondasi literasi finansial, pengelolaan keuangan pribadi, prinsip investasi, hingga struktur pasar dan manajemen risiko secara terstruktur.</p>
+            <p>Silakan pilih topik di atas atau tanyakan langsung dengan gaya bahasa Anda sendiri—mulai dari <strong>cara pandang finansial</strong>, <strong>arus kas &amp; dana darurat</strong>, <strong>reksa dana, obligasi, &amp; saham</strong>, hingga <strong>manajemen risiko dan psikologi pasar</strong>.</p>
+          </div>
+          <div class="meta">Zoén · Edukasi Finansial</div>
+        </div>
+      </div>
+    </section>
+
+    <div class="composer-wrap">
+      <form class="composer" id="form">
+        <textarea id="input" rows="1" placeholder="Tanyakan apa saja seputar finansial, pengelolaan uang, investasi, atau pasar..." autocomplete="off"></textarea>
+        <button class="send" id="send" type="submit" aria-label="Kirim pertanyaan">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="19" x2="12" y2="5"></line>
+            <polyline points="5 12 12 5 19 12"></polyline>
+          </svg>
+        </button>
+      </form>
+      <div class="hint">Tekan Enter untuk mengirim · Shift + Enter untuk baris baru</div>
+    </div>
+  </main>
+
+  <div class="footer">Zoén · Materi bersifat edukatif untuk membangun literasi finansial dan bukan merupakan saran investasi maupun sinyal transaksi.</div>
+</div>
+
+<script type="module" src="./js/main.js"></script>
+</body>
+</html>

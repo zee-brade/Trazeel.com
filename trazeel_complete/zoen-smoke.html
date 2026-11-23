@@ -1,0 +1,16 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Zoen smoke test</title></head><body>
+<iframe id="zoen" src="dashboard-trade/zoen/index.html" style="width:412px;height:860px;border:0"></iframe>
+<script>
+const frame = document.getElementById('zoen');
+frame.addEventListener('load', () => {
+  const doc = frame.contentDocument;
+  const input = doc.getElementById('input');
+  input.value = 'apa itu market structure?';
+  doc.getElementById('form').requestSubmit();
+  setTimeout(() => {
+    document.documentElement.dataset.response = doc.getElementById('chat').innerText.includes('market structure') ? 'visible' : 'missing';
+    document.documentElement.dataset.inputFocus = doc.activeElement && doc.activeElement.id ? doc.activeElement.id : 'none';
+    document.documentElement.dataset.answerLength = String(doc.getElementById('chat').innerText.length);
+  }, 8500);
+});
+</script></body></html>

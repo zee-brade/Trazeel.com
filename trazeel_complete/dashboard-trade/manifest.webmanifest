@@ -1,0 +1,18 @@
+{
+  "name": "Trazeel - Personal Trading Workspace",
+  "short_name": "Trazeel",
+  "description": "Offline-first personal trading journal.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0a0a0d",
+  "theme_color": "#0a0a0d",
+  "icons": [
+    {
+      "src": "./logo-trazeel.png",
+      "sizes": "1024x1024",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
